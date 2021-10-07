@@ -1,0 +1,42 @@
+<html>
+ <%-include("./includes/head.ejs", {title: "FailRadio", desc: "The best music radio bot for Discord."})%>
+ <body>
+  <div class="loading">
+    <img type="image/svg+xml" src="./favicon.svg" alt="LoadingScreenImage" class="animate__animated animate__bounce animate__infinite" width="500"/>
+
+  </div>
+  
+  <%-include("./includes/navbar.ejs")%>
+  <div class="home">
+   <center>
+    <img src="./favicon.svg" alt="Home" width="100" class=""/>
+    <br>
+    <h1>FailRadio</h1>
+    <br>
+    FailRadio is a radio platform and bot for Discord.
+    <br>
+    <br>
+    <button class="invite" onclick="location.href='https://discord.com/api/oauth2/authorize?client_id=829348146462326866&permissions=414732111681&scope=bot%20applications.commands';">Invite Bot</button>
+     <br>
+     <br>
+   </center>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#cc34fa" fill-opacity="1" d="M0,192L48,208C96,224,192,256,288,261.3C384,267,480,245,576,245.3C672,245,768,267,864,250.7C960,235,1056,181,1152,160C1248,139,1344,149,1392,154.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
+</svg>
+  <center>
+  <%radio.forEach(r => {%>
+  <img src="<%=r.image%>" class="_imgrd"/>
+   <br>
+   <br>
+   <h2><%=r.name%></h2>
+   <br>
+   <br>
+   <a class="join" href="/radio/<%=r.route%>">Listen</a>
+   <br>
+   <br>
+  <%})%>
+  </center>
+  <%-include("./includes/scripts.ejs")%>
+ </body>
+</html>

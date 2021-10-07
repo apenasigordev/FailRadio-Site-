@@ -1,0 +1,23 @@
+{
+	"radio": [{
+		"name": "Jovem Pan (Brazilian)",
+		"image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1vnen8W12GfAStAsJKlMEzg25k02h5S9tDQ&usqp=CAU",
+		"link": "https://18683.live.streamtheworld.com/JP_SP_FM_SC",
+		"route": "jp"
+	}, {
+		"name": "Mix FM (Brazilian)",
+		"image": "https://cdn-profiles.tunein.com/s86725/images/logoq.png?t=1",
+		"link": "https://23023.live.streamtheworld.com/MIXFM_SAOPAULO.mp3?dist=tunein-mp3",
+		"route": "mixfm"
+	}, {
+		"name": "Morada do Sol (Brazilian)",
+		"image": "http://cdn-profiles.tunein.com/s16287/images/logoq.png?t=157988",
+		"link": "http://r13.ciclano.io:9030/stream",
+		"route": "moradasol"
+	}, {
+		"name": "FCUM Radio (UK)",
+		"image": "http://cdn-radiotime-logos.tunein.com/s96326q.png",
+		"link": "https://s2.radio.co/s847c08ad4/listen?",
+		"route": "fcum"
+	}]
+}
